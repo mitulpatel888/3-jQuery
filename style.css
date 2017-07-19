@@ -1,16 +1,20 @@
-#greenCircle{
-	width: 200px;
-	height: 200px;
-	
-	border-radius: 100px;
-	background-color: green;
-}
-
-.redSquare{
-	width: 200px;
-	height: 200px;
-	background-color:red;
-	margin: 5px;
-	float: left
-	
-}
+ #circle {
+                
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+                
+            }
+            
+            .square {
+                
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px;
+                
+            }
+        
+        
