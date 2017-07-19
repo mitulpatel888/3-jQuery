@@ -35,6 +35,7 @@
     <body>
         
        <div id="circle"></div>
+	   <p>This is some data</p>
         
         <div class="square"></div>
         
@@ -45,7 +46,7 @@
             
             $("#circle").click(function() {
                 
-                alert("a circle was clicked!");
+                $("p").replaceWith( "new data" );
                 
             });
             
