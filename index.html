@@ -22,29 +22,21 @@
         
         <div class="square"></div>
         
-         <iframe src="http://www.cnn.com"></iframe>
+        
         <script type="text/javascript">
             
             $("#circle").click(function() {
                 
-                $("p").replaceWith( "Text has changed!!" );
+                $("#circle").css("width","400px");
                 
             });
-            
-            $(".square").hover(function() {
-                
-                alert("a square was clicked!");
-                
-            });
-            
-            $("#circle").hover(function()
-			{
-				$("iframe").attr("src","https://www.google.com");
-			}
+			$("body").click(function(){
 			
-			);
+				$("body").css("background-color","red");
+			
+			})
             
-            
+           
         
             
         
