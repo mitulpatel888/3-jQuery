@@ -22,7 +22,7 @@
         
         <div class="square"></div>
         
-        
+         <iframe src="http://www.cnn.com"></iframe>
         <script type="text/javascript">
             
             $("#circle").click(function() {
@@ -37,7 +37,12 @@
                 
             });
             
-            
+            $("#circle").hover(function()
+			{
+				$("iframe").attr("src","https://www.google.com");
+			}
+			
+			);
             
             
         
