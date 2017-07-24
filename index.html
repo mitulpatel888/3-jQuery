@@ -15,35 +15,14 @@
 
     <body>
         
-       <div id="circle"></div>
-	   <p>This is some data</p>
-        
-        <div class="square"></div>
-        
-        <div class="square"></div>
-        <p id="P2">This is example text.</p>
-        <p id="P3" style="display:none">This is example text P3.</p>
-		<button type="submit">Click Here</button>
-		<button type="submit" id="FadeIn">Fade In</button>
-        
+       <p>This is text. </p>
+       <button id="toggle" type="submit">Toggle</button>
         <script type="text/javascript">
-            
-            $("div").click(function(){
-				$(this).fadeOut("slow",function(){
-					alert("Fade out has finished");
-				}
-				);
-			});
-            $("button").click(function(){
+            $("#toggle").click(function(){
 			
-				$("#P2").fadeOut();
-			
+				$("p").toggle();
 			})
-           $("#FadeIn").click(function(){
-		   
-				$("#P3").fadeIn();
-		   });
-        
+         
             
         
         </script>
