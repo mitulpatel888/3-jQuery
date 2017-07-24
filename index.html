@@ -21,14 +21,22 @@
         <div class="square"></div>
         
         <div class="square"></div>
-        
+        <p id="P2">This is example text.</p>
+		<button type="submit">Click Here</button>
         
         <script type="text/javascript">
             
             $("div").click(function(){
-				$(this).fadeOut();
+				$(this).fadeOut("slow",function(){
+					alert("Fade out has finished");
+				}
+				);
 			});
-            
+            $("button").click(function(){
+			
+				$("#P2").fadeOut();
+			
+			})
            
         
             
