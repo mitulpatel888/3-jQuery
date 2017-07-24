@@ -22,7 +22,9 @@
         
         <div class="square"></div>
         <p id="P2">This is example text.</p>
+        <p id="P3" style="display:none">This is example text P3.</p>
 		<button type="submit">Click Here</button>
+		<button type="submit" id="FadeIn">Fade In</button>
         
         <script type="text/javascript">
             
@@ -37,7 +39,10 @@
 				$("#P2").fadeOut();
 			
 			})
-           
+           $("#FadeIn").click(function(){
+		   
+				$("#P3").fadeIn();
+		   });
         
             
         
