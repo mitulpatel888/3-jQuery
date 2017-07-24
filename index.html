@@ -25,17 +25,15 @@
         
         <script type="text/javascript">
             
-            $("#circle").click(function() {
-                
-                $("#circle").css("width","400px");
-                
-            });
-			$("body").click(function(){
+            $("div").click(function(){
+				if($(this).attr("id") == "circle")
+					alert("You clicked on circle");
+				else 
+				{
+					alert("You clicked on a square")
+				}
 			
-				$("body").css("background-color","#563d7c");
-				alert($("body").css("width"));
-			
-			})
+			});
             
            
         
