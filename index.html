@@ -8,22 +8,25 @@
         
         <link rel="stylesheet" type="text/css" href="style.css">
         
-           
+        <style type="text/css">
+			#circle{
+				width: 150px;
+				height: 150px;
+				border-radius:50%;
+				background-color:green;
+			}
+		</style>
         
         
     </head>
 
     <body>
         
-       <p>This is text. </p>
-       <button id="toggle" type="submit">Toggle</button>
+       <div id="circle"></div>
         <script type="text/javascript">
-            $("#toggle").click(function(){
-			
-				$("p").toggle();
-			})
-         
-            
+           $("#circle").click(function(){
+			alert("Circle clicked!!");
+		   })
         
         </script>
         
