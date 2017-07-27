@@ -2,38 +2,22 @@
 
     <head>
         
-        <title>jQuery</title>
+        <title>AJAX</title>
  
         <script type="text/javascript" src="jquery.min.js"></script>
         
-        <link rel="stylesheet" type="text/css" href="style.css">
         
-        <style type="text/css">
-			#circle{
-				width: 150px;
-				height: 150px;
-				border-radius:50%;
-				background-color:green;
-			}
-		</style>
         
         
     </head>
 
     <body>
         
-       <div id="circle"></div>
+       
         <script type="text/javascript">
-           $("#circle").click(function(){
-			$(this).animate({
-                width:"400px",
-                height:"400px",
-                marginLeft:"100px",
-                marginTop:"100px",
-            },2000,function(){
-            $(this).css("background-color","red");
+            $.ajax("info.txt").done(function(data){
+                alert(data);
             });
-		   });
         
         </script>
         
