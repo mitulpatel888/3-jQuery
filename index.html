@@ -18,7 +18,7 @@
         </p>
         <script type="text/javascript">
             $.ajax("info.txt").done(function(data){
-                $("p").append(data);
+                $("p").append(data); /*.html(data) can be used instead of .append(data)*/
             }).fail(function(){
                 alert("Could not get data");
             });
