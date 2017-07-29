@@ -2,29 +2,52 @@
 
     <head>
         
-        <title>AJAX</title>
+        <title>jQuery</title>
  
         <script type="text/javascript" src="jquery.min.js"></script>
         
-        
+        <style type="text/css">
+            body{
+            
+                font-family: helvetica, sans-serif;
+                font-size: 190%;
+            }
+            input{
+            
+                height: 35px;
+                padding: 7px;
+                font-size: 22px;
+                border-radius: 5px;
+                border: 1px solid grey; 
+                width: 320px;
+            }
+            label{
+                
+                position: relative;
+                top: 3px;
+                width: 150px;
+                
+            }
+            #wrapper{
+                margin: 0 auto;
+                width: 500px;
+            }
+        </style>
         
         
     </head>
 
     <body>
-        
-       <p>
-        
-        </p>
-        <script type="text/javascript">
-            $.ajax("info.txt").done(function(data){
-                $("p").append(data); /*.html(data) can be used instead of .append(data)*/
-            }).fail(function(){
-                alert("Could not get data");
-            });
-        
-        </script>
-        
+        <div id="wrapper">    
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="e.g username@domain.com">
+            <label for="Telephone">Telephone</label>
+            <input type="text" name="Telephone" id="Telephone" placeholder="Enter Telephone">
+        </div>
+            <script type="text/javascript">
+
+            </script>
+
     </body>
 
 </html>
