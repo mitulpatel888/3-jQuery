@@ -51,6 +51,7 @@
 
     <body>
         <div id="wrapper">
+            <div id="errorMessage"></div>
             <div class="labelContainer">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email" placeholder="e.g username@domain.com">
@@ -105,7 +106,9 @@
                 if ($("#password").val() != $("#passwordConfirmed").val()){
                     errorMessage += " Your Password does not match."
                 }
-                alert(errorMessage);
+                if(errorMessage != ""){
+                    $("#errorMessage").append(errorMessage);
+                }
             })
         </script>
 
