@@ -26,11 +26,15 @@
                 position: relative;
                 top: 3px;
                 width: 150px;
+                float:left;
                 
             }
             #wrapper{
                 margin: 0 auto;
                 width: 500px;
+            }
+            .labelContainer{
+                margin-bottom: 10px;
             }
         </style>
         
@@ -38,11 +42,15 @@
     </head>
 
     <body>
-        <div id="wrapper">    
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="e.g username@domain.com">
-            <label for="Telephone">Telephone</label>
-            <input type="text" name="Telephone" id="Telephone" placeholder="Enter Telephone">
+        <div id="wrapper">
+            <div class="labelContainer">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="e.g username@domain.com">
+            </div>
+            <div class="labelContainer">
+                <label for="Telephone">Telephone</label>
+                <input type="text" name="Telephone" id="Telephone" placeholder="e.g 123-456-8905">
+            </div>
         </div>
             <script type="text/javascript">
 
