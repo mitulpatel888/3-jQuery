@@ -10,7 +10,7 @@
             body{
             
                 font-family: helvetica, sans-serif;
-                font-size: 190%;
+                font-size: 150%;
             }
             input{
             
@@ -20,21 +20,29 @@
                 border-radius: 5px;
                 border: 1px solid grey; 
                 width: 320px;
+                
             }
             label{
                 
                 position: relative;
-                top: 3px;
-                width: 150px;
+                top: 4px;
+                width: 210px;
                 float:left;
                 
             }
             #wrapper{
                 margin: 0 auto;
-                width: 500px;
+                width: 550px;
             }
             .labelContainer{
                 margin-bottom: 10px;
+                
+            }
+            #submitButton{
+                
+                width:130px;
+                position: relative;
+                margin-left: 210px;
             }
         </style>
         
@@ -49,9 +57,21 @@
             </div>
             <div class="labelContainer">
                 <label for="Telephone">Telephone</label>
-                <input type="text" name="Telephone" id="Telephone" placeholder="e.g 123-456-8905">
+                <input type="text" name="Telephone" id="telephone" placeholder="e.g 123-456-8905">
+            </div>
+            <div class="labelContainer">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="password">
+            </div>
+            <div class="labelContainer">
+                <label for="passwordConfirmed">Confirm Password</label>
+                <input type="password" name="passwordConfirmed" id="passwordConfirmed">
+            </div>
+            <div class="labelConatainer">
+                <input type="submit" id="submitButton" value="Sign Up!">
             </div>
         </div>
+        
             <script type="text/javascript">
 
             </script>
