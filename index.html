@@ -9,6 +9,11 @@
         <script src="jquery-ui/jquery-ui.js"></script>
         <style type="text/css">
             #draggable { width: 150px; height: 150px; padding: 0.5em; }
+            #draggable3{
+                width: 150px;
+                height: 150px;
+                background-color: red;
+            }
         </style>
         
         
@@ -21,9 +26,13 @@
         <div id="draggable2">
             <p>Drag me horizontally</p>
         </div>
+        <div id="draggable3">
+            <p id="draggable4">I'm contained within the box</p>
+        </div>
         <script type="text/javascript">
             $("#draggable").draggable({axis:"y"}); /*This will move only veritically*/
             $("#draggable2").draggable({axis:"x"}); /*This will move only horizontally*/
+            $("#draggable4").draggable({containment: "parent"});
         </script>
 
     </body>
