@@ -5,7 +5,8 @@
         <title>jQuery</title>
  
         <script type="text/javascript" src="jquery.min.js"></script>
-        
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+        <script src="jquery-ui/jquery-ui.js"></script>
         <style type="text/css">
             body{
             
@@ -98,7 +99,7 @@
                     fieldMissing += "<br>password Confirmed";
                 }
                 if(fieldMissing != ""){
-                    errorMessage += "The following field are missing." + fieldMissing;
+                    errorMessage += "The following field are missing:" + fieldMissing;
                 }
                 if (isEmail($("#email").val())== false){
                     errorMessage +="<p>Your email address is not valid</p>";
