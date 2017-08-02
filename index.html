@@ -16,13 +16,14 @@
 
     <body>
         <div id="draggable" class="ui-widget-content">
-            <p>Drag me around</p>
+            <p>Drag me vertically</p>
         </div>
-        
+        <div id="draggable2">
+            <p>Drag me horizontally</p>
+        </div>
         <script type="text/javascript">
-            $( function() {
-                $( "#draggable" ).draggable();
-            } );
+            $("#draggable").draggable({axis:"y"}); /*This will move only veritically*/
+            $("#draggable2").draggable({axis:"x"}); /*This will move only horizontally*/
         </script>
 
     </body>
